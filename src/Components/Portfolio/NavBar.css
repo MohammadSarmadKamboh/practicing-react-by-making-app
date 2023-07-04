@@ -1,0 +1,25 @@
+.navigationBar {
+  margin: 10px 100px;
+  height: 123px;
+  padding-top: 15px;
+}
+.Frame2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Frame3 {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  cursor: pointer;
+}
+.Frame3 a {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color from parent */
+}
+.DarkMode {
+  background-color: #1f1e1e;
+  color: #ffffff;
+}
+

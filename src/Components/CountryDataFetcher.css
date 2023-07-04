@@ -1,0 +1,16 @@
+
+.country-select {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.country-name {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.country-info-item {
+  margin: 5px 0;
+}
+
