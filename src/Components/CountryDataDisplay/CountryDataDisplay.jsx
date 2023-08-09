@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import countryData from '../assets/CountryData';
+import countryData from '../../Assets/CountryData';
 import './CountryDataDisplay.css';
 
 const CountryDataDisplay = () => {

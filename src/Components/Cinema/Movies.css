@@ -1,0 +1,423 @@
+.movies {
+  /* background-color: rgba(255, 255, 255, 1); */
+  display: flex;
+  color: aliceblue;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  background: linear-gradient(126deg, #767197 0%, #1c1a29 100%);
+}
+
+/* .canvas .div {
+  background: linear-gradient(180deg, #767197 0%, #1c1a29 100%);
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px none;
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+  width: 360px;
+}
+
+.canvas .overlap {
+  height: 664px;
+  left: -174px;
+  position: absolute;
+  top: 0;
+  width: 534px;
+}
+
+.canvas .vector {
+  height: 437px;
+  left: 174px;
+  position: absolute;
+  top: 0;
+  width: 360px;
+}
+
+.canvas .current-location {
+  height: 35px;
+  left: 416px;
+  position: absolute;
+  top: 92px;
+  width: 97px;
+}
+
+.canvas .img {
+  height: 21px;
+  left: 0;
+  position: absolute;
+  top: 6px;
+  width: 15px;
+}
+
+.canvas .text-wrapper {
+  color: #191919;
+  font-family: "Open Sans-Bold", Helvetica;
+  font-size: 10px;
+  font-weight: 700;
+  left: 21px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 16px;
+  width: 72px;
+}
+
+.canvas .text-wrapper-2 {
+  color: #1b1a29;
+  font-family: "Open Sans-Regular", Helvetica;
+  font-size: 13px;
+  font-weight: 400;
+  left: 21px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  width: 47px;
+}
+
+.canvas .battery-group {
+  height: 16px;
+  left: 199px;
+  position: absolute;
+  top: 17px;
+  width: 312px;
+}
+
+.canvas .text-wrapper-3 {
+  color: #000000;
+  font-family: "Roboto-Regular", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 3px;
+  white-space: nowrap;
+  width: 36px;
+}
+
+.canvas .battery {
+  height: 16px;
+  left: 294px;
+  position: absolute;
+  top: 0;
+  width: 16px;
+}
+
+.canvas .wifi {
+  height: 13px;
+  left: 275px;
+  position: absolute;
+  top: 1px;
+  width: 13px;
+}
+
+.canvas .signal {
+  height: 13px;
+  left: 253px;
+  position: absolute;
+  top: 1px;
+  width: 13px;
+}
+
+.canvas .group {
+  height: 79px;
+  left: 193px;
+  position: absolute;
+  top: 70px;
+  width: 59px;
+}
+
+.canvas .text-wrapper-4 {
+  color: #ffffff;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-size: 12px;
+  font-weight: 600;
+  height: 14px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 65px;
+  white-space: nowrap;
+  width: 57px;
+}
+
+.canvas .group-2 {
+  height: 62px;
+  left: 14px;
+  position: absolute;
+  top: 0;
+  width: 22px;
+}
+
+.canvas .overlap-group {
+  height: 45px;
+  left: 0;
+  position: absolute;
+  top: 18px;
+  width: 22px;
+}
+
+.canvas .rectangle {
+  height: 42px;
+  left: 11px;
+  position: absolute;
+  top: 0;
+  width: 4px;
+}
+
+.canvas .ellipse {
+  height: 31px;
+  left: 0;
+  position: absolute;
+  top: 4px;
+  width: 22px;
+}
+
+.canvas .rectangle-2 {
+  height: 22px;
+  left: 12px;
+  position: absolute;
+  top: 23px;
+  width: 2px;
+}
+
+.canvas .overlap-2 {
+  height: 18px;
+  left: 7px;
+  position: absolute;
+  top: 0;
+  width: 11px;
+}
+
+.canvas .rectangle-3 {
+  height: 2px;
+  left: 0;
+  position: absolute;
+  top: 16px;
+  width: 11px;
+}
+
+.canvas .rectangle-4 {
+  background-color: #000000;
+  border: 1px solid;
+  border-color: #191919;
+  height: 13px;
+  left: 4px;
+  position: absolute;
+  top: 3px;
+  width: 2px;
+}
+
+.canvas .ellipse-2 {
+  background-color: #000000;
+  border: 1px solid;
+  border-color: #191919;
+  border-radius: 1.93px/2.25px;
+  height: 5px;
+  left: 3px;
+  position: absolute;
+  top: 0;
+  width: 4px;
+}
+
+.canvas .search-field-instance {
+  border-radius: 20px !important;
+  left: 198px !important;
+  position: absolute !important;
+  top: 167px !important;
+  width: 311px !important;
+}
+
+.canvas .design-component-instance-node {
+  color: #ebebf5 !important;
+  font-family: "Poppins-Light", Helvetica !important;
+  font-size: 15px !important;
+  font-style: unset !important;
+  font-weight: 300 !important;
+  letter-spacing: -0.41px !important;
+  line-height: 22px !important;
+}
+
+.canvas .group-3 {
+  height: 22px;
+  left: 198px;
+  position: absolute;
+  top: 233px;
+  width: 144px;
+}
+
+.canvas .text-wrapper-5 {
+  color: #ffffff;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 15px;
+  font-weight: 400;
+  left: 21px;
+  letter-spacing: 0;
+  line-height: 22px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  width: 121px;
+}
+
+.canvas .ellipse-3 {
+  background-color: #ffffff73;
+  border-radius: 131.5px/162.5px;
+  filter: blur(250px);
+  height: 325px;
+  left: 225px;
+  position: absolute;
+  top: 269px;
+  width: 263px;
+}
+
+.canvas .frame {
+  background-color: #c4c4c4;
+  border-radius: 15px;
+  height: 270px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 388px;
+  width: 220px;
+}
+
+.canvas .blacklight-movie {
+  height: 270px;
+  left: 174px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 46px;
+}
+
+.canvas .mask-group {
+  height: 282px;
+  left: 483px;
+  position: absolute;
+  top: 382px;
+  width: 51px;
+}
+
+.canvas .YASH-RAJ-FLIMS {
+  color: #c7c3e0;
+  font-family: "Poppins-SemiBold", Helvetica;
+  font-size: 10px;
+  font-weight: 400;
+  left: 221px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  text-shadow: 0px 4px 4px #00000040;
+  top: 583px;
+  width: 267px;
+}
+
+.canvas .span {
+  font-weight: 600;
+}
+
+.canvas .text-wrapper-6 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.canvas .text-wrapper-7 {
+  font-family: "Poppins-Bold", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.canvas .frame-2 {
+  background-image: url(./frame-25.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  border-radius: 16.15px;
+  box-shadow: 12px 10px 12px 5px #00000021;
+  height: 284px;
+  left: 259px;
+  position: absolute;
+  top: 282px;
+  width: 191px;
+}
+
+.canvas .overlap-3 {
+  height: 173px;
+  left: 23px;
+  position: absolute;
+  top: 678px;
+  width: 460px;
+}
+
+.canvas .now-playing {
+  height: 173px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 460px;
+}
+
+.canvas .rectangle-5 {
+  height: 85px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 37px;
+  width: 107px;
+}
+
+.canvas .rectangle-6 {
+  height: 85px;
+  left: 117px;
+  object-fit: cover;
+  position: absolute;
+  top: 37px;
+  width: 107px;
+}
+
+.canvas .rectangle-7 {
+  height: 85px;
+  left: 234px;
+  object-fit: cover;
+  position: absolute;
+  top: 37px;
+  width: 103px;
+}
+
+.canvas .rectangle-8 {
+  height: 136px;
+  left: 141px;
+  object-fit: cover;
+  position: absolute;
+  top: 375px;
+  width: 107px;
+}
+
+.canvas .text-wrapper-8 {
+  color: #c7c3e0;
+  font-family: "Poppins-Regular", Helvetica;
+  font-size: 15px;
+  font-weight: 400;
+  height: 18px;
+  left: 0;
+  letter-spacing: 0.15px;
+  line-height: normal;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  width: 111px;
+}
+
+.canvas .bot-navbar {
+  height: 78px;
+  left: 104px;
+  position: absolute;
+  top: 36px;
+  width: 218px;
+} */

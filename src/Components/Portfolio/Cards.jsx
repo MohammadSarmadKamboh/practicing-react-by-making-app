@@ -1,16 +1,16 @@
 import PropTypes from "prop-types";
 import "./Cards.css";
-import sugarCream from "../../assets/Images/cardImages/Sugar Cream.png";
-import coldBreeze from "../../assets/Images/cardImages/Cold Breeze.png";
-import earth from "../../assets/Images/cardImages/Earth.png";
-import sweetRain from "../../assets/Images/cardImages/Sweet Rain.png";
-import oldBuilding from "../../assets/Images/cardImages/oldBuilding.png";
-import iceCream from "../../assets/Images/cardImages/Ice Cream.png";
-import redSun from "../../assets/Images/cardImages/Red Sun.png";
-import lightGit from "../../assets/Images/lightGit.png";
-import darkGit from "../../assets/Images/darkGit.png";
-import lightLink from "../../assets/Images/lightLink.png";
-import darkLink from "../../assets/Images/darkLink.png";
+import sugarCream from "../../Assets/Images/cardImages/Sugar Cream.png";
+import coldBreeze from "../../Assets/Images/cardImages/Cold Breeze.png";
+import earth from "../../Assets/Images/cardImages/Earth.png";
+import sweetRain from "../../Assets/Images/cardImages/Sweet Rain.png";
+import oldBuilding from "../../Assets/Images/cardImages/oldBuilding.png";
+import iceCream from "../../Assets/Images/cardImages/Ice Cream.png";
+import redSun from "../../Assets/Images/cardImages/Red Sun.png";
+import lightGit from "../../Assets/Images/lightGit.png";
+import darkGit from "../../Assets/Images/darkGit.png";
+import lightLink from "../../Assets/Images/lightLink.png";
+import darkLink from "../../Assets/Images/darkLink.png";
 
 const Cards = ({ darkMode }) => {
   const cardData = [
@@ -73,7 +73,7 @@ const Cards = ({ darkMode }) => {
 
   return (
     <div className={`cards ${darkMode ? "DarkMode" : ""}`}>
-      <p style={{ fontSize: "18px", marginTop: "100px" }} id="featured-projects">FEATURED PROJECTS</p>
+      <p style={{ fontSize: "18px", marginTop: "100px", textAlign: "left" }} id="featured-projects">FEATURED PROJECTS</p>
 
       <div className="mainDiv">
         <div className="card-container">
@@ -107,7 +107,7 @@ const Cards = ({ darkMode }) => {
 };
 
 Cards.propTypes = {
-  darkMode: PropTypes.bool.isRequired
+  darkMode: PropTypes.bool
 };
 
 export default Cards;

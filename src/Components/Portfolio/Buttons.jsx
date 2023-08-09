@@ -90,7 +90,7 @@ const Buttons = ({ darkMode }) => {
 };
 
 Buttons.propTypes = {
-  darkMode: PropTypes.bool.isRequired
+  darkMode: PropTypes.bool
 };
 
 export default Buttons;

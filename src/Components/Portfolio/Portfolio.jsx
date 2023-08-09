@@ -13,14 +13,14 @@ const Portfolio = () => {
   };
 
   return (
-   
-      <div className={darkMode ? "DarkMode" : ""}>
-        <NavBar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-        <Hero darkMode={darkMode} />
-        <Cards darkMode={darkMode} />
-        <Footer darkMode={darkMode} />
-      </div>
-    
+
+    <div className={darkMode ? "DarkMode" : ""}>
+      <NavBar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      <Hero darkMode={darkMode} />
+      <Cards darkMode={darkMode} />
+      <Footer darkMode={darkMode} />
+    </div>
+
   );
 };
 

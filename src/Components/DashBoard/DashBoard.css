@@ -1,0 +1,66 @@
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: #f9f3c9;
+  padding: 20px;
+}
+
+.sidebar button {
+  width: 256px;
+  padding: 10px;
+  background-color: #f8e8a2;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  border: none;
+}
+
+.sidebar button:hover {
+  border: 1px solid #000;
+  background-color: #ffc947;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #f8e8a2;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: background-color 0.4s ease;
+}
+
+.sidebar li:hover {
+  border: 1px solid #000;
+  background-color: #ffc947;
+}
+
+.main-content {
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+/* Additional styling for specific components */
+/* .sidebar li[data-component="CountryDataFetcher"] {
+  background-color: #f28f3b;
+}
+
+.sidebar li[data-component="CountryDataDisplay"] {
+  background-color: #57bb8a;
+}
+
+.sidebar li[data-component="Portfolio"] {
+  background-color: #7e57c2;
+}
+
+.sidebar li[data-component="Articles"] {
+  background-color: #ee6e73;
+} */

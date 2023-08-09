@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 import "./Hero.css";
 import Buttons from "./Buttons";
-import arrowLight from "../../assets/Images/arrowLight.png";
-import arrowDark from "../../assets/Images/arrowDark.png";
+import arrowLight from "../../Assets/Images/arrowLight.png";
+import arrowDark from "../../Assets/Images/arrowDark.png";
 
 const Hero = ({ darkMode }) => {
 
@@ -30,9 +30,9 @@ const Hero = ({ darkMode }) => {
         </span>
       </p>
 
-      <p style={{ marginTop: "100px", fontSize:"22px" }} id="experience">EXPERIENCE</p>
+      <p style={{ marginTop: "100px", fontSize: "22px" }} id="experience">EXPERIENCE</p>
 
-      <Buttons/>
+      <Buttons />
       <hr
         style={{
           border: darkMode ? "0.6px solid #CCCCCC" : "0.6px solid #1A1A1A",
@@ -44,7 +44,7 @@ const Hero = ({ darkMode }) => {
 };
 
 Hero.propTypes = {
-  darkMode: PropTypes.bool.isRequired
+  darkMode: PropTypes.bool
 };
 
 export default Hero;

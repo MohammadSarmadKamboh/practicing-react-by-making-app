@@ -1,40 +1,40 @@
 .btn-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .btn {
-    background: white;
-    height: 43px;
-    width: 160px;
-    font-size: 18px;
-    border: none;
-    cursor: pointer;
-  }
-  .btn-dark {
-    background: #1f1e1e;
-    color: white;
-    height: 43px;
-    width: 160px;
-    font-size: 18px;
-    border: none;
-    cursor: pointer;
-  }
-  .btn-clicked {
-    background: #1f1e1e;
-    border-radius: 4px;
-    color: #C4C4C4;
-    height: 43px;
-    width: 160px;
-    font-size: 18px;
-  }
-  .intro2 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 60px;
-  }
-  .DarkMode {
-    background-color: #1f1e1e;
-    color: #ffffff;
-  }  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn {
+  background: white;
+  height: 43px;
+  width: 160px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+.btn-dark {
+  background: #1f1e1e;
+  color: white;
+  height: 43px;
+  width: 160px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+.btn-clicked {
+  background: #1f1e1e;
+  border-radius: 4px;
+  color: #c4c4c4;
+  height: 43px;
+  width: 160px;
+  font-size: 18px;
+}
+.intro2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+}
+.DarkMode {
+  background-color: #1f1e1e;
+  color: #ffffff;
+}

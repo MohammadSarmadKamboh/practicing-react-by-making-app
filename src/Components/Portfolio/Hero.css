@@ -1,5 +1,6 @@
 .hero {
-  margin: 50px 100px;
+  margin: 10px 15px;
+  text-align: justify;
 }
 .dr {
   width: 805px;
@@ -22,7 +23,7 @@
   text-align: justify;
 }
 .img1 {
-  width:33px;
+  width: 33px;
   height: 5px;
   margin-bottom: 4px;
   margin-left: 10px;
