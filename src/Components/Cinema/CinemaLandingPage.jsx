@@ -1,7 +1,7 @@
 import "./CinemaLandingPage.css";
 import AuthForm from "./AuthForm";
 // import Movies from './Movies';
-import Group1 from "../../Assets/Images/CinemaLandingPage/Group1.png";
+import Group1 from "../../Assets/Images/Group1.png";
 
 
 
