@@ -107,6 +107,9 @@ const AuthForm = () => {
         }
         finally {
             setSubmitting(false);
+            setTimeout(() => {
+                errorMessageElement.textContent = ''; // Clear the error message after 3 seconds
+            }, 3000);
         }
     };
 

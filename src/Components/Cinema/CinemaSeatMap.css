@@ -1,0 +1,15 @@
+.seat {
+  /* Your regular seat styles here */
+  /* border: 1px solid #ccc;
+    margin: 5px;
+    padding: 10px; */
+  cursor: pointer;
+}
+
+.seat.selected {
+  /* filter: sepia(50%); */
+  /* filter: hue-rotate(300deg); */
+  filter: brightness(2.5);
+  /* border: 5px solid green;
+  color: white; */
+}

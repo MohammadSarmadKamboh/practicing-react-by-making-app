@@ -1,0 +1,112 @@
+.Reservation {
+  background: linear-gradient(126deg, #767197 0%, #1c1a29 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  padding: 20px;
+}
+
+.ReservationLogo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  transition: transform 0.2s ease;
+  border: 2px solid transparent;
+  border-radius: 100px;
+  /* color: aliceblue; */
+  /* z-index: 100; */
+}
+
+.ReservationLogo:hover {
+  cursor: pointer;
+  transform: perspective(100px) translateZ(10px);
+  border-color: rgb(0, 106, 254);
+}
+
+.ReservationLogo img {
+  width: 75px;
+  height: 125px;
+}
+
+.ReservationLogo h3 {
+  margin: 0;
+}
+
+.selected-movie-card {
+  margin-top: 20px;
+}
+
+.selected-movie-card img {
+  height: 350px;
+  border-radius: 8px;
+}
+
+.selected-movie-card h2 {
+  margin: 0;
+}
+
+.Dates,
+.Time {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 600px;
+  height: 120px;
+}
+
+.Dates div,
+.Time div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid aliceblue;
+  border-radius: 10px;
+  width: 50px;
+  padding: 10px;
+  flex-direction: column;
+  background: linear-gradient(131deg, rgba(101, 97, 111, 0.8) 0%, #21232f 100%);
+  box-shadow: 0px 1px 1px 0px rgba(254, 253, 242, 0.5);
+  font-weight: 500;
+  font-size: larger;
+  transition: transform 0.2s ease;
+}
+
+.Dates div:hover,
+.Time div:hover {
+  cursor: pointer;
+  transform: perspective(100px) translateZ(10px);
+  border-color: rgb(0, 106, 254);
+}
+
+.Dates div {
+  height: 75px;
+}
+
+.Time div {
+  height: 40px;
+}
+
+.ResvBtn {
+  width: 300px;
+  height: 50px;
+  color: #201e2d;
+  font-size: 20px;
+  font-weight: 500px;
+  background: aliceblue;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  margin-top: -40px;
+  transition: transform 0.2s ease;
+}
+
+.ResvBtn:hover {
+  cursor: pointer;
+  transform: perspective(200px) translateZ(10px);
+  border-color: rgb(0, 106, 254);
+}

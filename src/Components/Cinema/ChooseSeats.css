@@ -1,0 +1,98 @@
+.ChooseSeats {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("/CinemaLandingPage/moviesBackground.jpg");
+  background-size: cover;
+  color: aliceblue;
+}
+
+.choose-seats-top-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.choose-seats-logo {
+  /* overflow: hidden; */
+  padding: 10px;
+  border: 2px solid transparent;
+  border-radius: 100px;
+  transition: transform 0.2s ease;
+}
+
+.choose-seats-logo:hover {
+  cursor: pointer;
+  transform: perspective(100px) translateZ(10px);
+  border-color: rgb(0, 106, 254);
+}
+
+.choose-seats-logo img {
+  margin-top: 0px;
+  height: 150px;
+}
+.choose-seats-logo h3 {
+  margin: 0;
+}
+
+.seatSelectionColors {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px 150px;
+}
+
+.calendar {
+  background-color: #ffffff4c;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+
+.calendar img {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.seatRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.seatRow svg {
+  margin: 30px 8px;
+  transition: transform 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.seatRow svg:hover {
+  cursor: pointer;
+  transform: perspective(100px) translateZ(10px);
+  border-color: rgb(0, 106, 254);
+}
+
+.selectedItems {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: larger;
+}
+
+.buyButton {
+  cursor: pointer;
+  border-radius: 50%;
+  width: 105px;
+  height: 105px;
+  background-color: #3e3c49;
+  color: #ffffff;
+  transition: transform 0.2s ease;
+}
+
+.buyButton:hover {
+  transform: perspective(100px) translateZ(10px);
+  border: 2px solid rgb(0, 106, 254);
+}

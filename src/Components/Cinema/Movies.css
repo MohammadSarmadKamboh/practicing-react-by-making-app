@@ -1,12 +1,78 @@
-.movies {
+.movies-container {
+  background-image: url("/CinemaLandingPage/moviesBackground.jpg");
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  height: auto;
+  /* display: grid; */
+  /* grid-template-rows: auto 1fr; */
+  /* gap: 20px; */
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.logo {
+  margin-top: 40px;
+}
+
+.logo img {
+  width: 100px;
+  height: 150px;
+  margin-right: 10px;
+}
+.logo h3 {
+  margin: 0;
+  color: aliceblue;
+}
+
+.location {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 90px;
+}
+.location img {
+  width: 50px;
+  height: 50px;
+}
+.location .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+.location p,
+.location h5 {
+  margin: 0;
+}
+
+.search-bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.filmIcon {
   display: flex;
   color: aliceblue;
+  padding-left: 10px;
+}
+
+.movie-cards-container {
+  display: flex;
   flex-direction: row;
-  justify-content: center;
-  background: linear-gradient(126deg, #767197 0%, #1c1a29 100%);
-  background-image: url("/CinemaLandingPage/Vector.svg");
-  height: 100vh;
-  width: 100vw;
-  background-size: cover;
-  border: 10px solid red;
+  overflow-x: scroll;
+  /* scroll-snap-type: x mandatory;
+  scroll-snap-align: center; */
+}
+
+.movie-cards-container::-webkit-scrollbar {
+  width: 1px;
+}
+
+.movie-cards-container::-webkit-scrollbar-track {
+  background-color: transparent;
 }

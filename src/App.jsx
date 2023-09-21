@@ -5,7 +5,10 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import RegistrationForm from "./Components/UserRegistration/RegistrationForm";
 import LoginForm from "./Components/UserLogin/LoginForm";
 import DashBoard from "./Components/DashBoard/DashBoard";
-import Movies from './Components/Cinema/Movies';
+import Movies from "./Components/Cinema/Movies";
+import Reservation from "./Components/Cinema/Reservation";
+import ChooseSeats from "./Components/Cinema/ChooseSeats";
+import Ticket from "./Components/Cinema/Ticket";
 import { AuthContextProvider } from "./Context/AuthContextProvider";
 import { AuthContext } from "./Context/AuthContext"; //
 
@@ -27,6 +30,9 @@ function App() {
 
             <Route path="/dashboard" element={<DashBoard />} />
             <Route path="/movies" element={<Movies />} />
+            <Route path="/reservation" element={<Reservation />} />
+            <Route path="/chooseSeats" element={<ChooseSeats />} />
+            <Route path="/ticket" element={<Ticket />} />
 
             {/* Protected route for Dashboard */}
             <Route path="/dashboard" element={currentUser ? <DashBoard /> : <Navigate to="/login" />} />
