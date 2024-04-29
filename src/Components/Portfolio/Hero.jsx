@@ -8,11 +8,10 @@ const Hero = ({ darkMode }) => {
 
   return (
     <div className={`hero ${darkMode ? "DarkMode" : ""}`}>
-      <p>Hey, I’m</p>
-      <p className="dr">Darlene Robertson</p>
+      <p>السلام عليكم ورحمة ﷲ وبركاته, I’m</p>
+      <p className="dr">Hafiz Muhammad Sarmad</p>
       <p className="intro">
-        I&apos;m a software engineer based in Toronto, Canada and also a
-        communication and journalism student. I enjoy creating things that live
+        I&apos;m a software engineer based in Lahore, Pakistan. I enjoy creating things that live
         on the internet, whether that be websites, applications, or anything in
         between. I have been freelancing for a year now while studying at the
         university and I&apos;ve manage to gain a decent amount of experience and

@@ -19,8 +19,8 @@ const ChooseSeats = () => {
 
 
 
-    console.log("Choose Seats", location);
-    console.log("Choose Seats", selectedMovie);
+    // console.log("Choose Seats", location);
+    // console.log("Choose Seats", selectedMovie);
 
 
 

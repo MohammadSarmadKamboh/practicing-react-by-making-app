@@ -23,14 +23,14 @@ const AuthForm = () => {
         try {
             if (isSignUp) {
 
-                console.log("Input values while Signing Up", values);
+                // console.log("Input values while Signing Up", values);
                 const userCredential = await createUserWithEmailAndPassword(
                     auth,
                     values.email,
                     values.password
                 );
 
-                console.log('user Sign Up credentials', userCredential);
+                // console.log('user Sign Up credentials', userCredential);
                 const user = userCredential.user;
 
                 console.log('User created or Signed Up:', user);
@@ -41,19 +41,19 @@ const AuthForm = () => {
             }
             else {
 
-                console.log("Input values while Signing In", values);
+                // console.log("Input values while Signing In", values);
 
                 const userCredential = await signInWithEmailAndPassword(auth, values.email, values.password);
-                console.log('user Sign In credentials', userCredential);
+                // console.log('user Sign In credentials', userCredential);
 
                 const user = userCredential.user;
-                console.log('user Signed In ', user)
+                // console.log('user Signed In ', user)
 
                 if (user) {
 
                     const idToken = await user.getIdToken();
 
-                    console.log('ID Token:', idToken);
+                    // console.log('ID Token:', idToken);
                     sessionStorage.setItem('ID Token:', idToken);
 
 

@@ -6,7 +6,7 @@ const Ticket = () => {
     const navigate = useNavigate();
     const location = useLocation();
 
-    console.log(location);
+    // console.log(location);
 
     // Access the data from location.state
     const state = location.state || {};
@@ -38,7 +38,11 @@ const Ticket = () => {
 
             {/* Display selected data from the state object */}
             <div className="ticket-details">
-                <img src={state.selectedMovie.Poster} alt={state.selectedMovie.Title} />
+                <img
+                    src={state.selectedMovie.Poster}
+                    alt={state.selectedMovie.Title}
+                    title={state.selectedMovie.Title}
+                />
                 <h2>Resevation Details</h2>
 
                 <p>Movie Title: {state.selectedMovie.Title}</p>

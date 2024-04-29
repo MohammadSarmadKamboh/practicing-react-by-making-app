@@ -1,0 +1,85 @@
+/* Style the header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style the navigation menu */
+.menu {
+  display: flex;
+  list-style: none;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+  color: gray;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.menu a:hover {
+  color: #77cdd5;
+}
+.menu a.active {
+  color: #282828;
+  font-weight: bold;
+}
+
+/* Style the logo image */
+.logo1 {
+  display: flex;
+}
+
+.image-container {
+  position: relative;
+  width: 180px;
+  height: 90px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.image-rollover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://cdn.myportfolio.com/570fa894016684b1a5772208d22d2909/3a1f6267-7288-4716-bb56-87e11b43d3a3_rwc_0x0x800x400x4096.png?h=4b2a1c4af9fcdf9329a1b78dcd5a4695");
+  background-size: cover;
+  opacity: 0;
+}
+
+.image-container:hover .image-rollover {
+  opacity: 1;
+}
+
+/* Style the social media icons */
+.social-icons .icons-list {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
+
+.social-icons .icons-list li {
+  margin-right: 10px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  fill: black;
+}
+
+/* Add hover effect to social media icons */
+.icon:hover {
+  fill: #77cdd5; /* Change to your desired hover color */
+}

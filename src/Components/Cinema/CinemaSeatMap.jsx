@@ -116,35 +116,3 @@ CinemaSeatMap.propTypes = {
 
 
 export default CinemaSeatMap;
-
-
-
-
-// import PropTypes from 'prop-types';
-// import './Seat.css';
-
-
-// const Seat = ({ count }) => {
-//     const seats = [];
-
-//     for (let i = 0; i < count; i++) {
-//         seats.push(
-//             <img
-//                 key={i}
-//                 src="./CinemaLandingPage/Seat.svg"
-//                 alt="Seat"
-//                 width={90}
-//                 height={66}
-//             />
-//         );
-
-//     }
-
-//     return <div >{seats.map(seat => seat)}</div>;
-// };
-
-// Seat.propTypes = {
-//     count: PropTypes.number.isRequired,
-// };
-
-// export default Seat;

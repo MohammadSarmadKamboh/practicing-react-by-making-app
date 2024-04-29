@@ -1,11 +1,7 @@
 .movies-container {
   background-image: url("/CinemaLandingPage/moviesBackground.jpg");
-  /* background-repeat: no-repeat; */
   background-size: cover;
   height: auto;
-  /* display: grid; */
-  /* grid-template-rows: auto 1fr; */
-  /* gap: 20px; */
 }
 
 .top-section {

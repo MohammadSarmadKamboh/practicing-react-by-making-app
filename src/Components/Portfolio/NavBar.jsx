@@ -11,7 +11,7 @@ const NavBar = ({ darkMode, toggleDarkMode }) => {
       <section className={`navigationBar ${darkMode ? 'DarkMode' : ''}`}>
 
         <div className="Frame2">
-          <span>DR.</span>
+          <span>HMS.</span>
           <ul className="Frame3">
             <li><a href="#featured-projects">Projects</a></li>
             <li><a href="#experience">Resume</a></li>

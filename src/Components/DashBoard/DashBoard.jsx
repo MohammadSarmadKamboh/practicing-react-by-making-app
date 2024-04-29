@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
 import "./DashBoard.css";
+import MainLayoutPage from "../WallNuts/MainLayoutPage";
 import CinemaLandingPage from "../Cinema/CinemaLandingPage";
 import CountryDataFetcher from "../CountryDataFetcher/CountryDataFetcher";
 import CountryDataDisplay from "../CountryDataDisplay/CountryDataDisplay";
@@ -54,6 +55,9 @@ const DashBoard = () => {
 
         <ul>
 
+          <li onClick={() => handleComponentClick('MainLayoutPage')}>
+            WallNut Website Page Layout
+          </li>
           <li onClick={() => handleComponentClick('CinemaLandingPage')}>
             Cinema App
           </li>
@@ -79,7 +83,7 @@ const DashBoard = () => {
       </div>
 
       <div className="main-content">
-
+        {selectedComponent === 'MainLayoutPage' && <MainLayoutPage />}
         {selectedComponent === 'CinemaLandingPage' && <CinemaLandingPage />}
         {selectedComponent === 'CountryDataFetcher' && <CountryDataFetcher />}
         {selectedComponent === 'CountryDataDisplay' && <CountryDataDisplay />}
