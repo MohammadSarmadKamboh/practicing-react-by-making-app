@@ -15,7 +15,7 @@
   background-color: #f8e8a2;
   border-radius: 5px;
   cursor: pointer;
-  transition: border 1s, background-color 0.5s, transform 0.2s ease;
+  transition: border 0.4s, background-color 0.4s, transform 0.2s ease;
   border: 2px solid transparent;
 }
 
@@ -36,7 +36,7 @@
   background-color: #f8e8a2;
   border-radius: 5px;
   margin-bottom: 10px;
-  transition: border 1s, background-color 0.5s, transform 0.2s ease;
+  transition: border 0.4s, background-color 0.4s, transform 0.2s ease;
   border: 2px solid transparent;
 }
 
@@ -44,6 +44,17 @@
   border: 2px solid #000;
   background-color: #ffc947;
   transform: perspective(300px) translateZ(20px);
+}
+
+/* .sidebar li:active {
+  border: 1px solid #000 !important;
+  background-color: #ffc947 !important;
+  transform: perspective(300px) translateZ(20px);
+} */
+
+.active-li {
+  border: 2px solid #000 !important;
+  background-color: #ffc947 !important;
 }
 
 .main-content {

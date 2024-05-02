@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
 import "./DashBoard.css";
+import EMSMainLayoutPage from "../EMSHomePageLayout/EMSMainLayoutPage";
 import MainLayoutPage from "../WallNuts/MainLayoutPage";
 import CinemaLandingPage from "../Cinema/CinemaLandingPage";
 import CountryDataFetcher from "../CountryDataFetcher/CountryDataFetcher";
@@ -55,25 +56,36 @@ const DashBoard = () => {
 
         <ul>
 
-          <li onClick={() => handleComponentClick('MainLayoutPage')}>
+          <li className={`${selectedComponent == 'EMSMainLayoutPage' ? 'active-li' : ''}`}
+            onClick={() => handleComponentClick('EMSMainLayoutPage')}>
+            EMS Home Page Layout
+          </li>
+          <li className={`${selectedComponent == 'MainLayoutPage' ? 'active-li' : ''}`}
+            onClick={() => handleComponentClick('MainLayoutPage')}>
             WallNut Website Page Layout
           </li>
-          <li onClick={() => handleComponentClick('CinemaLandingPage')}>
+          <li className={`${selectedComponent == 'CinemaLandingPage' ? 'active-li' : ''}`}
+            onClick={() => handleComponentClick('CinemaLandingPage')}>
             Cinema App
           </li>
-          <li onClick={() => handleComponentClick('CountryDataFetcher')}>
+          <li className={`${selectedComponent == 'CountryDataFetcher' ? 'active-li' : ''}`}
+            onClick={() => handleComponentClick('CountryDataFetcher')}>
             Country Data Fetcher API
           </li>
-          <li onClick={() => handleComponentClick('CountryDataDisplay')}>
+          <li className={`${selectedComponent == 'CountryDataDisplay' ? 'active-li' : ''}`}
+            onClick={() => handleComponentClick('CountryDataDisplay')}>
             Disply Data by Selecting Country Code and Zip Code
           </li>
-          <li onClick={() => handleComponentClick('Portfolio')}>
+          <li className={`${selectedComponent == 'Portfolio' ? 'active-li' : ''}`}
+            onClick={() => handleComponentClick('Portfolio')}>
             Portfolio
           </li>
-          <li onClick={() => handleComponentClick('Articles')}>
+          <li className={`${selectedComponent == 'Articles' ? 'active-li' : ''}`}
+            onClick={() => handleComponentClick('Articles')}>
             Articles
           </li>
-          <li onClick={() => handleComponentClick('Movies')}>
+          <li className={`${selectedComponent == 'Movies' ? 'active-li' : ''}`}
+            onClick={() => handleComponentClick('Movies')}>
             Movies
           </li>
 
@@ -83,6 +95,7 @@ const DashBoard = () => {
       </div>
 
       <div className="main-content">
+        {selectedComponent === 'EMSMainLayoutPage' && <EMSMainLayoutPage />}
         {selectedComponent === 'MainLayoutPage' && <MainLayoutPage />}
         {selectedComponent === 'CinemaLandingPage' && <CinemaLandingPage />}
         {selectedComponent === 'CountryDataFetcher' && <CountryDataFetcher />}
